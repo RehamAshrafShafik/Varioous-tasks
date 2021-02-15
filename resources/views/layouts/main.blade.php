@@ -154,13 +154,28 @@
          
           </li>
           <li class="nav-item">
-            <a href="{{route('veichle')}}" class="nav-link">
-              <i class="nav-icon fas fa-map"></i>
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-map "></i>
               <p>
                Veichles
+               <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-         
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('veichle')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add/Edit/Show active users </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('attach_veichle')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Attach veichle to user </p>
+                </a>
+              </li>
+    
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -207,7 +222,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.1.0-rc
     </div>
-    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021 <a href="https://404island.com">Romanda</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->

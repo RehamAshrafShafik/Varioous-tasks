@@ -35,6 +35,8 @@ Route::get('Veichle',[App\Http\Controllers\VeichleController::class, 'veichle'])
 Route::get('Veichle/add',[App\Http\Controllers\VeichleController::class, 'add'])->name('add_veichle');
 Route::get('Veichle/update',[App\Http\Controllers\VeichleController::class, 'update'])->name('update_veichle');
 Route::get('Veichle/list_active',[App\Http\Controllers\VeichleController::class, 'list_active'])->name('list_active');
+Route::get('Veichle/attach_veichle',[App\Http\Controllers\VeichleController::class, 'attach_veichle'])->name('attach_veichle');
+Route::get('Veichle/attach',[App\Http\Controllers\VeichleController::class, 'attach'])->name('attach');
 
 // Route::post('/RequestTableFilter', [App\Http\Controllers\FilterController::class, 'filter_request'])->name('filter_request');
 // Route::get('/UserTableFilter', [App\Http\Controllers\FilterController::class, 'filter_user'])->name('filter_user');

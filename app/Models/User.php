@@ -68,6 +68,10 @@ class User extends Authenticatable
         ->using(UserVeichle::class)
         ->withPivot('status');
     }
+    public function hasVeichle($veichle)
+    {
+        return $this->veichles()->where('veichle_id', $veichle)->exists();
+    }
     /**
      * The attributes that should be hidden for arrays.
      *

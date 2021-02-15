@@ -19,8 +19,11 @@ class CreateUserVeichlesTable extends Migration
             $table->foreignId('user_id');
             $table->enum('status',['active','non active'])->default('non active');
             $table->timestamps();
+            $table->unique(['veichle_id', 'user_id']);
+
         });
     }
+
 
     /**
      * Reverse the migrations.
